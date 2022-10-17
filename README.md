@@ -1,8 +1,8 @@
+One of the first pages for deskop only (at this point) created as part of a InfoShare Academy Junior Frontend Developer Bootcamp.
 
-Wykonaj layout strony zgodnie z załączonym [template](https://github.com/infoshareacademy/jfdzr7-project-html-css/tree/main/cahee/template).
-Strona nie musi być wykonan jako pixel-perfect.
+The purpose of the task was recreate page from image template to practice html and css.
 
-Tips
-* wszytskie zdjęcia i ikonki masz w folderze `./images`
-* użyj `colorpicker` by odczytać odpowiedni kolor sekcji
-
+Some ideas for improve project in the future:
+- make website responsible
+- add some animation (especially for smoth scrolling)
+- contact form sent message to me :)
