@@ -15,7 +15,7 @@
 
     <main>
         <header class="section section-header-and-hero">
-            <nav class="site-header">
+            <nav id="nav" class="nav-container">
                 <p class="logo">Cahee</p>
                 <ul class="nav-list">
                     <li class="nav-list-item"><a href="#home" class="nav-list-link">home</a></li>
@@ -117,7 +117,7 @@
                     ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
                 <form class="subscribe-form">
                     <input type="email" class="subscribe-email-input" placeholder="Your email addres">
-                    <input type="submit" class="button button-subscribe" value="subscribe">
+                    <button type="submit" class="button button-subscribe">subscribe</button>
                 </form>
             </div>
         </section>
@@ -128,7 +128,7 @@
                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in volupate
                 velit.</p>
             <div class="blog-gallery">
-                <div class="blog-gallery-tile">
+                <article class="blog-gallery-tile">
                     <div class="blog-gallery-date">
                         <p class="blog-gallery-date__day">20</p>
                         <p class="blog-gallery-date__month">nov</p>
@@ -138,8 +138,8 @@
                         <p class="blog-gallery-autor">By Auskteez</p>
                         <p class="blog-gallery-time">- 2 hours ago</p>
                     </div>
-                </div>
-                <div class="blog-gallery-tile">
+                </article>
+                <article class="blog-gallery-tile">
                     <div class="blog-gallery-date">
                         <p class="blog-gallery-date__day">14</p>
                         <p class="blog-gallery-date__month">nov</p>
@@ -149,8 +149,8 @@
                         <p class="blog-gallery-autor">By Auskteez</p>
                         <p class="blog-gallery-time">- 3 hours ago</p>
                     </div>
-                </div>
-                <div class="blog-gallery-tile">
+                </article>
+                <article class="blog-gallery-tile">
                     <div class="blog-gallery-date">
                         <p class="blog-gallery-date__day">10</p>
                         <p class="blog-gallery-date__month">nov</p>
@@ -160,7 +160,7 @@
                         <p class="blog-gallery-autor">By Auskteez</p>
                         <p class="blog-gallery-time">- 6 hours ago</p>
                     </div>
-                </div>
+                </article>
             </div>
             <a href="#" class="button button-blog">view more</a>
         </section>
@@ -176,7 +176,7 @@
                 <input class="contact-form__input" type="email" placeholder="Your email" required>
                 <input class="contact-form__input" tyle="tel" placeholder="Your phone number">
                 <textarea class="contact-form__input" placeholder="Your message" rows="20" required></textarea>
-                <input type="submit" class="button button-contact contact-form__submit" value="send">
+                <button type="submit" class="button button-contact contact-form__submit">send</button>
             </form>
             <div class="contact-container">
                 <h4 class="contact-subtitle">address</h4>
@@ -194,6 +194,7 @@
         <p class="site-footer-autor">Made with <span class="love">love</span> by Auskteez</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>

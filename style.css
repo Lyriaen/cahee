@@ -28,6 +28,7 @@
     text-align: center;
     font-size: 16px;
     line-height: 24px;
+    cursor: pointer;
 }
 
 .section-title {
@@ -61,14 +62,25 @@
     color: #fff;
 }
 
-.site-header {
+.nav-container {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
-    width: calc(100% - 220px);
+    width: 100%;
+    background-color: transparent;
+    transition: background-color 0.2s ease-in;
 }
+
+.nav-scrolled {
+    padding: 20px 120px;
+    background-color: rgb(248, 248, 251);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
 
 .logo {
     font-family: Pacifico, sans-serif;
@@ -303,6 +315,14 @@
     width: 380px;
     height: 320px;
     padding: 20px;
+    --tile-background-img: url('');
+    background-color: rgb(192, 192, 192);
+    background-image:
+        linear-gradient(to top,
+            rgba(0, 0, 0, 0.9) 0,
+            rgba(0, 0, 0, 0) 50%,
+            transparent 100%),
+        var(--tile-background-img);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -310,6 +330,18 @@
     flex-flow: column nowrap;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+.blog-gallery-tile:nth-child(1) {
+    --tile-background-img: url('./images/blog/blog1.jpg');
+}
+
+.blog-gallery-tile:nth-child(2) {
+    --tile-background-img: url('./images/blog/blog2.jpg');
+}
+
+.blog-gallery-tile:nth-child(3) {
+    --tile-background-img: url('./images/blog/blog3.jpg');
 }
 
 .blog-gallery-date {
@@ -338,33 +370,6 @@
 .blog-gallery-autor,
 .blog-gallery-time {
     display: inline-block;
-}
-
-.blog-gallery-tile:first-child {
-    background-image:
-        linear-gradient(to top,
-            rgba(0, 0, 0, 0.9) 0,
-            rgba(0, 0, 0, 0) 50%,
-            transparent 100%),
-        url('./images/blog/blog1.jpg');
-}
-
-.blog-gallery-tile:nth-child(2) {
-    background-image:
-        linear-gradient(0deg,
-            rgba(0, 0, 0, 0.9) 0,
-            rgba(0, 0, 0, 0) 50%,
-            transparent 100%),
-        url('./images/blog/blog2.jpg');
-}
-
-.blog-gallery-tile:last-child {
-    background-image:
-        linear-gradient(0deg,
-            rgba(0, 0, 0, 0.9) 0,
-            rgba(0, 0, 0, 0) 50%,
-            transparent 100%),
-        url('./images/blog/blog3.jpg');
 }
 
 .button-blog {
@@ -416,7 +421,6 @@ textarea.contact-form__input {
     color: #fff;
     font-weight: normal;
 }
-
 
 .contact-form__input:focus {
     outline: none;
